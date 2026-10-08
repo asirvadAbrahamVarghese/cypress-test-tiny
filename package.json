@@ -1,9 +1,11 @@
 {
   "name": "cypress-test-tiny",
   "version": "1.0.0",
-  "description": "Small project for quickly testing Cypress.io test runner",
+  "description": "Minimal reproduction for Cypress 16 cy.intercept() freeze on Chrome native network path",
   "scripts": {
+    "server": "node server.js",
     "cypress:run": "cypress run",
+    "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:open": "cypress open",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
@@ -15,6 +17,7 @@
   "author": "Cypress-io",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^16.0.0"
   },
   "repository": {
     "type": "git",
